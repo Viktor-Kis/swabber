@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <title>Swabber Settings</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <!-- Bootstrap JS and Popper.js (required for Bootstrap) -->
+    <script src="popper.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+  </head>
+
+  <body>
+    <div class="container py-5">
+      <select id="color">
+        <option value="red">red</option>
+        <option value="green">green</option>
+        <option value="blue">blue</option>
+        <option value="yellow">yellow</option>
+      </select>
+
+      <label>
+        <input type="checkbox" id="like" />
+        I like colors.
+      </label>
+
+      <div id="status"></div>
+      <button class="btn btn-primary" id="save">Save</button>
+    </div>
+    <script src="options.js"></script>
+  </body>
+
+</html>

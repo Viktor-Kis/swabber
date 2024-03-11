@@ -1,0 +1,16 @@
+---
+- div:
+    - class: placeholder-ad
+    - id: adocean
+    - id: index_shopline
+    - class: goAdverticum
+    - class: promotion
+    - class: banner
+    - id: banner
+    - class: adsbygoogle
+- iframe:
+    - id: google_ads_iframe_
+- img:
+    - src: adocean
+    - src: googlesyndication
+    - src: adclick.g.doubleclick.net

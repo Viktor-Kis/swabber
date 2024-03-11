@@ -1,0 +1,45 @@
+{
+  "manifest_version": 3,
+  "name": "Swabber",
+  "version": "1.0",
+  "description": "Eliminate all annoying ads, pesky cookie consent pop-ups, and other distracting elements that hinder your browsing experience.",
+  "icons": {
+    "16": "icon-16.png",
+    "32": "icon-32.png",
+    "48": "icon-48.png",
+    "128": "icon-128.png"
+  },
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": false
+  },
+  "permissions": [
+    "storage"
+  ],
+  "content_scripts": [
+    {
+      "js": [
+        "start.js",
+        "js-yaml.min.js"
+      ],
+      "matches": [
+        "<all_urls>"
+      ],
+      "permissions": [
+        "activeTab",
+        "tabs"
+      ]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "settings.yaml"
+      ],
+      "matches": [
+        "<all_urls>"
+      ]
+    }
+  ]
+
+}
